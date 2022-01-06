@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+body{
+    margin:0;
+    overflow:hidden;
+    background-color:black;
+}
+
+#startButton, #restartButton{
+    position: absolute;
+    bottom: 45vh;
+    left:40vw;
+    width: 300px;
+    height: 100px;
+    font-size:50px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px ;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.keys {
+  position: absolute;
+  bottom: 10vh;
+  left: 33vw;
+  font-family: 'Lato', sans-serif;    
+  text-align: center;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+
+.arr {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background: grey;
+  color: white;
+  font-size: 50px;
+  border-right: 10px solid darken(grey, 20);
+  border-bottom: 10px solid darken(grey, 20);
+  border-left: 10px solid darken(grey, 15);
+  border-top: 10px solid darken(grey, 10);  
+  display: inline-block;
+  margin: 5px;
+  transition: all .05s linear;
+}
+.arr:active {
+    border-bottom: 8px solid darken(grey, 20);
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 20px white;    
+    transform: translate(0, 2px);
+}
+
